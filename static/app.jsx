@@ -34,15 +34,22 @@ var LoggedIn = React.createClass({
   // },
   getInitialState: function () {
     return {
-      products: [{ "Id": 1, "Name": "Dororo", "Slug": "dororo", "Description": "Give me back my body" }, { "Id": 2, "Name": "O Maiden", "Slug": "o-maiden", "Description": "Literature club becomes sex ed" }, { "Id": 3, "Name": "Demon Slayer", "Slug": "demon-slayer", "Description": "Year of the basket loli" }, { "Id": 4, "Name": "Boku No Hero", "Slug": "my-hero", "Description": "Imagine being useless until you're not" }, { "Id": 5, "Name": "Haikyuu", "Slug": "haikyuu", "Description": "Volleyball is cool" }, { "Id": 6, "Name": "Boruto", "Slug": "boruto", "Description": "Boruto's dad needs an anime" }]
-    } 
-    },
+      products: [
+        { "Id": 1, "Name": "Dororo", "Slug": "dororo", "Description": "Give me back my body" },
+        { "Id": 2, "Name": "O Maiden", "Slug": "o-maiden", "Description": "Literature club becomes sex ed" },
+        { "Id": 3, "Name": "Demon Slayer", "Slug": "demon-slayer", "Description": "Year of the basket loli" },
+        { "Id": 4, "Name": "Boku No Hero", "Slug": "my-hero", "Description": "Imagine being useless until you're not" },
+        { "Id": 5, "Name": "Haikyuu", "Slug": "haikyuu", "Description": "Volleyball is cool" },
+        { "Id": 6, "Name": "Boruto", "Slug": "boruto", "Description": "Boruto's dad needs an anime" }
+      ]
+    }
+  },
   // Once this components mounts, we will make a call to the API to get the product data
   componentDidMount: function () {
     this.serverRequest = $.get('http://localhost:3000/products', function (result) {
       this.setState({
         products: result,
-      });x
+      }); x
     }.bind(this));
   },
 
