@@ -40,6 +40,7 @@ func main() {
 
 	// We will setup our server so we can serve static assest like images, css from the /static/{file} route
 	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))
+	r.PathPrefix("/component/").Handler(http.StripPrefix("/component/", http.FileServer(http.Dir("./component/"))))
 
 	// Our application will run on port 3000. Here we declare the port and pass in our router.
 	http.ListenAndServe(":3000", handlers.LoggingHandler(os.Stdout, r))
