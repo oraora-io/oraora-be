@@ -5,15 +5,11 @@ import (
 	"net/http"
 	"os"
 
+	seasons "github.com/oraora-io/oraora-be/seasons"
+
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
-	"github.comoraora-io/oraora-be/seasons.go"
 )
-
-// Name of the anime
-type Name struct {
-	Title string
-}
 
 func main() {
 	// Here we are instantiating the gorilla/mux router

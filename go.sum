@@ -1,0 +1,6 @@
+github.com/darenliang/jikan-go v0.0.0-20191111221916-d0d13e1ff382 h1:wcktwoA2pkTxifJGqmHmi2mlBNmawofObtbNy/nnE7E=
+github.com/darenliang/jikan-go v0.0.0-20191111221916-d0d13e1ff382/go.mod h1:ipZUI91RNYm45oa3irkCyXVvaKYFW2Cintl6Vyqj3JI=
+github.com/gorilla/handlers v1.4.2 h1:0QniY0USkHQ1RGCLfKxeNHK9bkDHGRYGNDFBCS+YARg=
+github.com/gorilla/handlers v1.4.2/go.mod h1:Qkdc/uu4tH4g6mTK6auzZ766c4CA0Ng8+o/OAirnOIQ=
+github.com/gorilla/mux v1.7.3 h1:gnP5JzjVOuiZD07fKKToCAOjS0yOpj/qPETTXCCS6hw=
+github.com/gorilla/mux v1.7.3/go.mod h1:1lud6UwP+6orDFRuTfBEV8e9/aOM/c4fVVCaMa2zaAs=

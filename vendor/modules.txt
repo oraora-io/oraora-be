@@ -1,0 +1,6 @@
+# github.com/darenliang/jikan-go v0.0.0-20191111221916-d0d13e1ff382
+github.com/darenliang/jikan-go
+# github.com/gorilla/handlers v1.4.2
+github.com/gorilla/handlers
+# github.com/gorilla/mux v1.7.3
+github.com/gorilla/mux

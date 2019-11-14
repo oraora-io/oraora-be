@@ -1,21 +1,23 @@
-package main
+package seasons
 
 import (
 	"encoding/json"
 	"fmt"
 	"net/http"
 
-	"github.com/darenliang/jikan-go"
+	jikan "github.com/darenliang/jikan-go"
 )
+
+// Name of the anime
+type Name struct {
+	Title string
+}
 
 // AnimeHandler reports the data in raw JSON
 var AnimeHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 	// Gets all the anime information data based on year and season
-	season, _ := jikan.GetSeason(jikan.Season{
-		Year:   2019,
-		Season: "fall",
-	})
+	season, _ := jikan.Season{Year: 2019, Season: "Fall"}.Get()
 
 	// Starting with an empty slice of strings
 	var animeSlice []string
