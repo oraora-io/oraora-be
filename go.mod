@@ -1,6 +1,6 @@
 module github.com/oraora-io/oraora-be
 
-require github.com/oraora-io/oraora-be/seasons v0.0.0
+require github.com/oraora-io/oraora-be/seasons v0.0.0-20191114182100-5486f39b7694
 
 replace github.com/oraora-io/oraora-be/seasons v0.0.0 => ./seasons
 

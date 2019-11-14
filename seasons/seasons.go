@@ -17,7 +17,7 @@ type Name struct {
 var AnimeHandler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 
 	// Gets all the anime information data based on year and season
-	season, _ := jikan.Season{Year: 2019, Season: "Fall"}.Get()
+	season, _ := jikan.Season{Year: 2019, Season: "fall"}.Get()
 
 	// Starting with an empty slice of strings
 	var animeSlice []string
